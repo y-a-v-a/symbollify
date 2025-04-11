@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Emoji Transformer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Text to Emoji Transformer</h1>
+      <div class="app-container">
+        <div class="input-container">
+          <h2>Type your text here:</h2>
+          <textarea
+            id="textInput"
+            placeholder="Start typing and see the magic happen..."
+          ></textarea>
+        </div>
+        <div class="output-container">
+          <h2>Emoji Output:</h2>
+          <div id="emojiOutput" class="emoji-output"></div>
+        </div>
+      </div>
+      <div class="info-container">
+        <h3>How it works</h3>
+        <p>
+          As you type, your words are automatically transformed into emojis. Try typing words like
+          "happy", "sad", "love", or "dog" to see the transformation!
+        </p>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
