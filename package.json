@@ -1,0 +1,31 @@
+{
+  "name": "emojifier",
+  "version": "1.0.0",
+  "description": "This project provides tools for building a comprehensive emoji dictionary.",
+  "homepage": "https://github.com/y-a-v-a/symbollify#readme",
+  "bugs": {
+    "url": "https://github.com/y-a-v-a/symbollify/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/y-a-v-a/symbollify.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "extract": "node index.js",
+    "extract:advanced": "node emojiToJson.js",
+    "extract:minimal": "node emojiToJson.js --format minimal",
+    "extract:compare": "node emojiToJson.js --compare true",
+    "generate": "node generateEmojiWords.js",
+    "generate:offset": "node generateEmojiWords.js",
+    "merge": "node mergeEmojiWords.js",
+    "merge:overwrite": "node mergeEmojiWords.js --overwrite",
+    "merge:category": "node mergeEmojiWords.js --category",
+    "workflow:full": "npm run extract && npm run generate && npm run merge",
+    "workflow:overwrite": "npm run extract && npm run generate && npm run merge:overwrite"
+  }
+}
