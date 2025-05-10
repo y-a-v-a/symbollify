@@ -28,3 +28,4 @@ When extending the emoji dictionary in `script.js`, follow these conventions:
 - Group entries by category with comments (e.g., // Emotions, // Food)
 - Use lowercase keys without spaces
 - Keep emojis semantically accurate
+- `'😃': ['smile', 'grin', 'smiling', 'beaming'],` each entry in the dictionary is an object key with an array of words that apply to the emoji.
